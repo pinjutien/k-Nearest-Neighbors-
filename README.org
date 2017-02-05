@@ -1,0 +1,5 @@
+* K-nearest neighbor implementation:
+  * The idea is to use the k-neighbor of data to make a prediction of the class.
+  * For every test data,  we calculate the euclidean distance between every test data and the training data.
+  * For every test data, We choose the k nearest data set and use those k data set to make a classifiction using class vote.
+  * ref: http://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/
