@@ -81,7 +81,7 @@ class K_nearest_neighbors(object):
         print "use k-closest neighbors to make a prediction."
         prediction_results = list()
         for i in range(len(test_set)):
-            k_neighbors = self.get_neighbors(data_example, training_set, k, length)
+            k_neighbors = self.get_neighbors(test_set[i], training_set, k, length)
             prediction_results.append([self.predict(k_neighbors)])
 
         accuracy =  self.get_accuracy(test_set, prediction_results):
